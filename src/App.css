@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+background:linear-gradient(
+135deg,
+#667eea,
+#764ba2,
+#6b73ff);
+background-size:400% 400%;
+animation:gradient 10s ease infinite;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(15px);
+}
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:600;
+}
+
+nav button{
+background:none;
+border:none;
+color:white;
+font-size:18px;
+margin-left:20px;
+cursor:pointer;
+transition:.3s;
+}
+
+nav button:hover{
+color:#ffd700;
+transform:translateY(-2px);
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:30px auto;
+}
+
+.hero{
+text-align:center;
+color:white;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+}
+
+.counter-card,
+.glass-card,
+.table-card{
+background:rgba(255,255,255,.95);
+border-radius:20px;
+padding:25px;
+margin-top:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.counter-card:hover,
+.glass-card:hover{
+transform:translateY(-5px);
+}
+
+.counter-card span{
+font-size:60px;
+color:#4f46e5;
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+input{
+padding:12px;
+border:2px solid #ddd;
+border-radius:10px;
+}
+
+.add-btn,
+.delete-btn{
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+color:white;
+}
+
+.add-btn{
+background:#4f46e5;
+}
+
+.delete-btn{
+background:#ef4444;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:15px;
+text-align:center;
+}
+
+th{
+background:#4f46e5;
+color:white;
+}
+
+.avatar{
+width:40px;
+height:40px;
+border-radius:50%;
+background:#4f46e5;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+font-weight:bold;
+}
+
+.large{
+width:70px;
+height:70px;
+font-size:24px;
+margin-bottom:15px;
+}
+
+.student-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.student-card{
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.student-card:hover{
+transform:translateY(-8px);
+}
+
+.features{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.features div{
+background:#4f46e5;
+color:white;
+padding:10px 20px;
+border-radius:30px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:white;
+margin-top:40px;
+}
